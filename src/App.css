@@ -298,7 +298,7 @@ div.cards {
   height: 70vh;
   display: grid;
   grid-row-start: 2;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 0.5rem;
 }
 
@@ -313,75 +313,38 @@ div.cards {
 
 div.card{
   display: flex;
-  height:60vh;
-  padding: 2em;
-  flex-direction: column-reverse;
-}
-
-div.project-1-content,div.project-2-content,div.project-3-content,div.project-4-content,div.project-5-content{
-  font-size: 2vh;
-  flex:3
-}
-div.project-1-img{
-  background-image: url(./Image/Projects/project1_1.png);
-  background-size: cover;
+  height:25vh;
+  /* background-size: cover; */
   width:100%;
-  flex:8;
-  height:100vh;
+  border: solid 2px;
   border-radius: 14px;
   padding: 0.5rem;
   max-width:100%;
   max-height:100%
+}
+/* 
+div.card:nth-child(2n+2) {
+  grid-column: span 2;
+} */
+/* div.project-1-img{
+  background-image: url(./Image/Projects/project1_1.png);
 }
 
 div.project-2-img{
   background-image: url(./Image/Projects/project2_5.png);
-  background-size: cover;
-  width:100%;
-  flex:8;
-  height:100vh;
-  border-radius: 14px;
-  padding: 0.5rem;
-  max-width:100%;
-  max-height:100%
-
 }
 
 div.project-3-img{
   background-image: url(./Image/Projects/project3_5.png);
-  background-size: cover;
-  width:100%;
-  flex:8;
-  height:100vh;
-  border-radius: 14px;
-  padding: 0.5rem;
-  max-width:100%;
-  max-height:100%
 }
 
 div.project-4-img{
   background-image: url(./Image/Projects/project4_1.png);
-  background-size: cover;
-  width:100%;
-  flex:8;
-  height:100vh;
-  border-radius: 14px;
-  padding: 0.5rem;
-  max-width:100%;
-  max-height:100%
 }
 
 div.project-5-img{
   background-image: url(./Image/Projects/project5_2.png);
-  background-size: cover;
-  width:100%;
-  flex:8;
-  height:100vh;
-  border-radius: 14px;
-  padding: 0.5rem;
-  max-width:100%;
-  max-height:100%
-}
+} */
 
 @media (max-width: 992px) {
   div.open-image{
@@ -415,6 +378,23 @@ div.open-text{
 div.open-title{
   font-size: 4vh;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
 }
 
 div.coming-soon{
@@ -576,6 +556,16 @@ ul li.social-icon:hover:nth-child(4) a:before{
 }
 ul li.social-icon:hover:nth-child(4) a:after{
   background: #000;
+}
+
+ul li.social-icon:hover:nth-child(5) a{
+  background: rgb(21, 5, 163);
+}
+ul li.social-icon:hover:nth-child(5) a:before{
+  background: rgb(21, 5, 163);
+}
+ul li.social-icon:hover:nth-child(5) a:after{
+  background: rgb(21, 5, 163);
 }
 
 

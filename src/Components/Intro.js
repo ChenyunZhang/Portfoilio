@@ -3,7 +3,7 @@ import React, {useRef,useEffect} from 'react'
 function Intro() {
     useEffect(() => {
         const handleScroll =e =>{
-            console.log(window.scrollY,greetRef.current.offsetTop)
+            // console.log(window.scrollY,greetRef.current.offsetTop)
         }
 
         window.addEventListener("scroll",handleScroll)

@@ -2,14 +2,11 @@ import React, { useState, useEffect, useRef } from 'react'
 
 function Nav() {
     const [active, setActive] = useState(false)
-    const [stickyActive, setStickyActive] = useState(false)
-    const handleClick = e => {
-        setActive(!active)
-    }
+    const handleClick = e => { setActive(!active) }
 
     return (
         <>
-            <nav id="nav-bar" className={stickyActive ? "fixed-nav" : null}>
+            <nav id="nav-bar">
                 <div className="hamburger" onClick={handleClick}>
                     <div className="line"></div>
                     <div className="line"></div>

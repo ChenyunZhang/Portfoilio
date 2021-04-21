@@ -9,6 +9,8 @@ import Works from "./Components/Works"
 import Home from "./Components/Home"
 import Footer from "./Components/Footer"
 import Open from "./Components/Opening"
+import Intro from "./Components/Intro"
+import Explore from "./Components/Explore"
 
 function App(props) {
   return (
@@ -18,6 +20,8 @@ function App(props) {
           <Route exact path="/">
             <Nav />
             <Open />
+            <Intro />
+            <Explore />
             <Home />
           </Route>
 

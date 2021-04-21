@@ -23,7 +23,7 @@ function Opening() {
               <li className="social-icon"><a className="twitter" target="_blank" href="https://twitter.com/Ttrazcy"><i className="fa fa-twitter"></i><span>Twitter</span></a></li>
               <li className="social-icon"><a className="linkedin" target="_blank" href="https://www.linkedin.com/in/chenyun-zhang/"><i className="fa fa-linkedin"></i><span>Linkedin</span></a></li>
               <li className="social-icon"><a className="medium" target="_blank" href="https://medium.com/@morningchenyun"><i className="fa fa-medium"></i><span>Medium</span></a></li>
-              <li className="social-icon"><a className="resume" target="_blank" href={resume} download><i class="fa fa-file"></i><span>Resume</span></a></li>
+              {/* <li className="social-icon"><a className="resume" target="_blank" href={resume} download><i class="fa fa-file"></i><span>Resume</span></a></li> */}
             </ul>
           </div>
         </div>

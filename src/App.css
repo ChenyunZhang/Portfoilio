@@ -183,7 +183,7 @@ body{
 
 nav{
   list-style:none;
-  background: #0D0D0D;
+  background: white;
   display: flex;
   position: fixed;
   top: 0;
@@ -196,13 +196,13 @@ nav{
 
 .nav-links li a,.brand{
   text-decoration:none;
-  color: #fff;
+  color:#A6A6A6;
   font-size:16px;
 }
 
 .nav-links{
    display: flex;
-   width:50%;
+   width:30%;
    list-style:none;
    height:100%;
    justify-content: space-around;
@@ -221,7 +221,7 @@ nav{
   .line{
     width:30px;
     height:3px;
-    background: #F2F2F0;
+    background: #A6A6A6;
     margin:5px;
   }
   nav {
@@ -239,7 +239,7 @@ nav{
 
   .nav-links{
     position: fixed;
-    background: #0D0D0D;
+    background:#0D0D0D;
     height:100vh;
     width:100%;
     flex-direction:column;
@@ -359,8 +359,9 @@ div.footer a i{
 
 div.open-image{
   width:100%;
-  height:100vh;
-  background-image: url("./Image/image8.png");
+  height:90vh;
+  background-color: #D9D9D9;
+  /* background-image: url("./Image/image6.png"); */
 }
 
 div.open-text{
@@ -368,7 +369,7 @@ div.open-text{
   height:100%;
   font-weight: bold;
   font-family: sans-serif;
-  color:#0D0D0D;
+  color:#222625;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -397,15 +398,36 @@ div.open-title{
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
-div.coming-soon{
-  font-size: 7vh;
+
+div.intro-container{
+  /* display: flex;
   width:100%;
   height:100vh;
-  color:white;
-  background-color:#050B0D;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  background-color:#BACDD9 */
+}
+
+div.explore-container{
+  display: flex;
+  width:100%;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+  color:black;
+  background-color: #D9D9D9;
+}
+
+div.intro-greeting{
+  font-size: 10vh;
+  color:black;
+  display: flex;
+  width:100%;
+  height:100vh;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  /* animation: animate 1s linear forwards; */
 }
 
 div.open-text div span.letter{
@@ -440,7 +462,7 @@ div.open-description{
 
 ul.social-icons{
   position:absolute;
-  top:80%;
+  top:70%;
   left:50%;
   transform:translate(-50%, -50%);
   display:flex;
@@ -559,13 +581,13 @@ ul li.social-icon:hover:nth-child(4) a:after{
 }
 
 ul li.social-icon:hover:nth-child(5) a{
-  background: rgb(21, 5, 163);
+  background: rgb(63, 29, 1);
 }
 ul li.social-icon:hover:nth-child(5) a:before{
-  background: rgb(21, 5, 163);
+  background: rgb(63, 29, 1);
 }
 ul li.social-icon:hover:nth-child(5) a:after{
-  background: rgb(21, 5, 163);
+  background: rgb(63, 29, 1);
 }
 
 

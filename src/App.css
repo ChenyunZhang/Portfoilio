@@ -179,8 +179,6 @@
 
 body{
   font-family: sans-serif;
-  overflow-y: hidden;
-  overflow-x: hidden;
   }
 
 nav{
@@ -296,12 +294,12 @@ div.project-wrapper{
 
 div.cards {
   overflow: scroll;
-  width: 80vw;
+  width: 90vw;
   height: 70vh;
   display: grid;
   grid-row-start: 2;
-  grid-template-columns: repeat(1,1fr);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 0.5rem;
 }
 
 div.cards::-webkit-scrollbar {
@@ -314,35 +312,75 @@ div.cards {
 }
 
 div.card{
-  height: 40vh;
-  transition: .5s;
-  border: 2px solid #e7e7e7; 
+  display: flex;
+  height:60vh;
+  padding: 2em;
+  flex-direction: column-reverse;
+}
+
+div.project-1-content,div.project-2-content,div.project-3-content,div.project-4-content,div.project-5-content{
+  font-size: 2vh;
+  flex:3
+}
+div.project-1-img{
+  background-image: url(./Image/Projects/project1_1.png);
+  background-size: cover;
+  width:100%;
+  flex:8;
+  height:100vh;
   border-radius: 14px;
   padding: 0.5rem;
-  background-size: cover;
   max-width:100%;
   max-height:100%
 }
 
-div.card.project-1{
-  background-image: url(./Image/Projects/project1_1.png);
-}
-
-div.card.project-2{
+div.project-2-img{
   background-image: url(./Image/Projects/project2_5.png);
+  background-size: cover;
+  width:100%;
+  flex:8;
+  height:100vh;
+  border-radius: 14px;
+  padding: 0.5rem;
+  max-width:100%;
+  max-height:100%
 
 }
 
-div.card.project-3{
+div.project-3-img{
   background-image: url(./Image/Projects/project3_5.png);
+  background-size: cover;
+  width:100%;
+  flex:8;
+  height:100vh;
+  border-radius: 14px;
+  padding: 0.5rem;
+  max-width:100%;
+  max-height:100%
 }
 
-div.card.project-4{
+div.project-4-img{
   background-image: url(./Image/Projects/project4_1.png);
+  background-size: cover;
+  width:100%;
+  flex:8;
+  height:100vh;
+  border-radius: 14px;
+  padding: 0.5rem;
+  max-width:100%;
+  max-height:100%
 }
 
-div.card.project-5{
+div.project-5-img{
   background-image: url(./Image/Projects/project5_2.png);
+  background-size: cover;
+  width:100%;
+  flex:8;
+  height:100vh;
+  border-radius: 14px;
+  padding: 0.5rem;
+  max-width:100%;
+  max-height:100%
 }
 
 @media (max-width: 992px) {

@@ -19,7 +19,6 @@ function App(props) {
             <Nav />
             <Open />
             <Home />
-            <Footer />
           </Route>
 
           <Route exact path="/project">

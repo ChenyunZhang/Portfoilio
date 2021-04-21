@@ -1,21 +1,12 @@
 import React from 'react'
+import Footer from "./Footer"
 
 function Works() {
     return (
-        <div>
-        <div className="cards">
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
-            <div className="card">1</div>
+        <>
+        <div className="project-wrapper">
         </div>
-        </div>
+        </>
     )
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import Footer from "./Footer"
 
 function Blogs() {
     return (
-        <div>
-            blogs
+        <div className="project-wrapper">
+        
         </div>
     )
 }

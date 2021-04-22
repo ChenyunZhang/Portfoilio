@@ -4,7 +4,9 @@ import Footer from "./Footer"
 function Works() {
     return (
         <>
-        abc
+        <div className="project-wrapper">
+        
+        </div>
         </>
     )
 }

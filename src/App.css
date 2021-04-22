@@ -2,12 +2,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* width: 50%; */
+  background-color: rgb(4, 41, 23);;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -5vh;
+  padding-bottom: 1vh;
 }
 
 .social-buttons__button {
@@ -26,8 +28,8 @@
       -ms-flex-align: center;
           align-items: center;
   outline: none;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   text-decoration: none;
 }
 
@@ -129,6 +131,14 @@
   background: #212121;
 }
 
+.social-button--email{
+  color:rgb(70, 65, 65);
+}
+
+.social-button--email::after {
+  background: rgb(70, 65, 65);
+}
+
 .social-button--steam {
   color: #7da10e;
 }
@@ -186,12 +196,13 @@ nav{
   background: white;
   display: flex;
   top: 0;
+  position: sticky;
   font-family: 'sans-serif';
   font-weight: bold;
   width: 100%;
   background-color: rgb(4, 41, 23);
   flex-direction: row;
-  height:10vh;
+  height:8vh;
 }
 
 .fixed-nav{
@@ -283,17 +294,14 @@ nav{
 .brand:hover{
   color: grey;
 }
-div.project-container{
-    width:100%;
-    height:600px;
-}
+
 div.project-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
   width:100%;
   margin-top: 3vh;
-  height:80vh;
+  height:81vh;
 }
 
 div.cards {
@@ -327,6 +335,12 @@ a.card{
   max-height:100%
 }
 
+a.card:nth-child(2n+1){
+  grid-row: span 2 / auto;
+  grid-column: span 2 /auto;
+}
+
+
 ul.project-buttons{
   list-style: none;
 }
@@ -350,7 +364,7 @@ ul.project-buttons{
   color: white;
 }
 
-/* a.card:nth-child(1){
+a.card:nth-child(1){
   background-image: url(./Image/Projects/project1_1.png);
 }
 a.card:nth-child(2){
@@ -364,7 +378,7 @@ a.card:nth-child(4){
 }
 a.card:nth-child(5){
   background-image: url(./Image/Projects/project5_2.png);
-} */
+}
 
 .hit-the-floor {
   color: #fff;
@@ -462,7 +476,7 @@ div.footer a i{
 
 div.open-image{
   width:100%;
-  height:90vh;
+  height:92vh;
   /* background-image: linear-gradient(to left, rgba(255,0,0,0), #A6A6A6); */
   background-image: url("./Image/open.jpg");
   background-size: cover;

@@ -35,11 +35,13 @@ function App(props) {
           <Route exact path="/work">
             <Nav />
             <Works />
+            <Footer/>
           </Route>
 
           <Route exact path="/blog">
             <Nav />
             <Blogs />
+            <Footer/>
           </Route>
           <Route> 
             <Error/>

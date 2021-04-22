@@ -24,6 +24,11 @@ function Footer() {
                     <i className="fa fa-medium"></i>
                     </span>
                 </a>
+                <a target="_blank" href="mailto:morningchenyun@gmail.com" className="social-buttons__button social-button social-button--email" aria-label="Email">
+                    <span className="social-button__inner">
+                    <i className="fa fa-envelope"></i>
+                    </span>
+                </a>
                 </div>
         </>
     )

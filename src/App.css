@@ -482,15 +482,6 @@ div.open-title{
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
-
-div.intro-container{
-  /* display: flex;
-  width:100%;
-  height:100vh;
-  justify-content: center;
-  background-color:#BACDD9 */
-}
-
 div.explore-container{
   display: flex;
   width:100%;
@@ -679,6 +670,7 @@ div.intro-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -695,7 +687,6 @@ div.intro-wrapper{
   width: 320px;
   /* margin: 20px; */
   padding: 40px 30px;
-  background: #ebf5fc;
   border-radius: 40px;
   box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
       6px 6px 20px rgba(0, 0, 0, .1);
@@ -760,3 +751,4 @@ div.intro-wrapper{
   transform: scale(0.98);
 }
 /* intro css */
+

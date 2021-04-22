@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 
 function Nav() {
     const [active, setActive] = useState(false)
@@ -14,9 +15,9 @@ function Nav() {
                 </div>
                 <a className="brand" href="/">HOME</a>
                 <ul className={active ? "nav-links open" : "nav-links"}>
-                    <li className={active ? "nav-link fade" : "nav-link"}><a href="project">PROJECT</a></li>
-                    <li className={active ? "nav-link fade" : "nav-link"}><a href="work">WORK</a></li>
-                    <li className={active ? "nav-link fade" : "nav-link"}><a href="blog">BLOG</a></li>
+                    <li className={active ? "nav-link fade" : "nav-link"}><Link to="project">PROJECT</Link></li>
+                    <li className={active ? "nav-link fade" : "nav-link"}><Link to="work">WORK</Link></li>
+                    <li className={active ? "nav-link fade" : "nav-link"}><Link to="blog">BLOG</Link></li>
                 </ul>
             </nav>
         </>

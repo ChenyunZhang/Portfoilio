@@ -11,6 +11,7 @@ import Footer from "./Components/Footer"
 import Open from "./Components/Opening"
 import Intro from "./Components/Intro"
 import Explore from "./Components/Explore"
+import Error from "./Components/Error"
 
 function App(props) {
   return (
@@ -39,6 +40,9 @@ function App(props) {
           <Route exact path="/blog">
             <Nav />
             <Blogs />
+          </Route>
+          <Route> 
+            <Error/>
           </Route>
         </Switch>
       </Router>

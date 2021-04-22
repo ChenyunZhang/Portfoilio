@@ -4,7 +4,7 @@ function Error() {
     return (
         <div>
             <div className="hit-the-floor">Working on it...👷</div>
-            <div className="hit-the-floor buttom">WTF???👩‍💻</div>
+            <div className="hit-the-floor buttom">HUH???🤷‍♀️</div>
         </div>
     )
 }

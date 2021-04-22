@@ -7,7 +7,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -10px;
+  margin-top: -5vh;
 }
 
 .social-buttons__button {
@@ -292,18 +292,19 @@ div.project-wrapper{
   align-items: center;
   justify-content: center;
   width:100%;
-  margin-top: 10vh;
+  margin-top: 3vh;
   height:80vh;
 }
 
 div.cards {
   overflow: scroll;
   width: 90vw;
-  height: 70vh;
+  height: 80vh;
   display: grid;
-  grid-row-start: 2;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 0.5rem;
+  grid-auto-flow:dense;
+  grid-gap: 1.5em;
+  grid-template-rows: repeat(30, 150px);
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 div.cards::-webkit-scrollbar {
@@ -317,38 +318,39 @@ div.cards {
 
 div.card{
   display: flex;
-  height:25vh;
-  /* background-size: cover; */
+  background-size: cover;
   width:100%;
-  border: solid 2px;
   border-radius: 14px;
   padding: 0.5rem;
   max-width:100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   max-height:100%
 }
-/* 
-div.card:nth-child(2n+2) {
-  grid-column: span 2;
-} */
-/* div.project-1-img{
+
+div.card:nth-child(2n) {
+			grid-column: span 2;
+			grid-row: span 2;
+}
+
+
+div.card:nth-child(1){
   background-image: url(./Image/Projects/project1_1.png);
 }
-
-div.project-2-img{
+div.card:nth-child(2){
   background-image: url(./Image/Projects/project2_5.png);
 }
-
-div.project-3-img{
+div.card:nth-child(3){
   background-image: url(./Image/Projects/project3_5.png);
 }
-
-div.project-4-img{
+div.card:nth-child(4){
   background-image: url(./Image/Projects/project4_1.png);
 }
-
-div.project-5-img{
+div.card:nth-child(5){
   background-image: url(./Image/Projects/project5_2.png);
-} */
+}
+
+
+
 
 @media (max-width: 992px) {
   div.open-image{

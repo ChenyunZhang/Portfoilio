@@ -28,6 +28,7 @@ function App(props) {
           <Route exact path="/project">
             <Nav />
             <Projects />
+            <Footer/>
           </Route>
 
           <Route exact path="/work">

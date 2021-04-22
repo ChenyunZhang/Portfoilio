@@ -303,8 +303,8 @@ div.cards {
   display: grid;
   grid-auto-flow:dense;
   grid-gap: 1.5em;
-  grid-template-rows: repeat(30, 250px);
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows: repeat(30, 200px);
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 div.cards::-webkit-scrollbar {
@@ -321,15 +321,36 @@ a.card{
   background-size: cover;
   width:100%;
   border-radius: 14px;
-  justify-content: center;
-  align-items: center;
   padding: 0.5rem;
   max-width:100%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   max-height:100%
 }
 
-a.card:nth-child(1){
+ul.project-buttons{
+  list-style: none;
+}
+
+.project.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.project.fa:hover {
+  opacity: 0.7;
+}
+
+.project.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* a.card:nth-child(1){
   background-image: url(./Image/Projects/project1_1.png);
 }
 a.card:nth-child(2){
@@ -343,7 +364,7 @@ a.card:nth-child(4){
 }
 a.card:nth-child(5){
   background-image: url(./Image/Projects/project5_2.png);
-}
+} */
 
 .hit-the-floor {
   color: #fff;

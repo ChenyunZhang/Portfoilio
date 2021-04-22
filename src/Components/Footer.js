@@ -19,7 +19,7 @@ function Footer() {
                     <i className="fa fa-github"></i>
                     </span>
                 </a>
-                <a href="#" className="social-buttons__button social-button social-button--codepen" aria-label="CodePen">
+                <a target="_blank" href="https://medium.com/@morningchenyun" className="social-buttons__button social-button social-button--codepen" aria-label="CodePen">
                     <span className="social-button__inner">
                     <i className="fa fa-medium"></i>
                     </span>

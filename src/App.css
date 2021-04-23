@@ -367,7 +367,7 @@ a.work-card:hover{
   transform: scale(1.02);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 786px) {
   a.card:nth-child(2n){
     grid-row: span 2 / auto;
     grid-column: span 2 /auto;

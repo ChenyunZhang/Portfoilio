@@ -367,10 +367,11 @@ a.work-card:hover{
   transform: scale(1.02);
 }
 
-
-a.card:nth-child(2n+1){
-  grid-row: span 2 / auto;
-  grid-column: span 2 /auto;
+@media (min-width: 992px) {
+  a.card:nth-child(2n){
+    grid-row: span 2 / auto;
+    grid-column: span 2 /auto;
+  }
 }
 
 
